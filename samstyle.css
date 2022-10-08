@@ -12,7 +12,7 @@
 }
 hr{
         height: 1px;
-        background-color: #ccc;
+        background-color: gray;
         border: none;
         width: 100%;
 }
@@ -21,6 +21,8 @@ hr{
     padding-right: 10px;
     color: #ccc;
     font-size: larger;
+    font-weight: bold;
+    font-family: 'Cuprum', sans-serif;
     /* background-color: black; */
 }
 .navbar ul li:hover{
@@ -42,6 +44,7 @@ hr{
     font-weight: bold;
     padding: 20px;
     font-size: 100px;
+    font-family: 'Anton', sans-serif;
 }
 
 .content{
@@ -75,9 +78,16 @@ hr{
     grid-area: 1/1/4/2;
     
 }
+.vertical p,h5{
+    color: gray;
+    font-family: 'Rajdhani', sans-serif;
+}
+.vertical h4{
+    font-family: 'KoHo', sans-serif;
+}
 .content .item1 img{
-    width: 40%;
-    height: 50%;
+    width: 90%;
+    height: 60%;
 }
 .content .item img{
     width: 30%;
@@ -99,7 +109,7 @@ hr{
     padding:25px 0;
 }
 .col{
-    width:80rem;
+    width:67rem;
     margin:auto;
    /* border:1px solid red;*/
     display:flex;
@@ -134,4 +144,47 @@ hr{
     background: aquamarine;
     color:rgb(124, 20, 162);
 
+}
+
+footer{
+    background: grey;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+}
+.social-links{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.4rem;
+}
+.social-links a{
+    border: 2px solid white;
+    color: black;
+    display: block;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    text-decoration: none;
+    margin: 0 0.3rem;
+    transition: all 0.5s ease;
+}
+.social-links a:hover{
+    background: purple;
+    opacity:0.9;
+    color:var(--exDark);
+}
+.footer span{
+    margin-top: 1rem;
+    display: block;
+    font-family: var(--Playfair);
+    letter-spacing: 2px;
+}
+@media only screen and (min-width: 200px) and (max-width: 767px){
+    .col{
+        width: 100%;
+        flex-direction: column;
+    }
 }
