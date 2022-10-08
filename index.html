@@ -1,133 +1,190 @@
-<!DOCTYPE html>
-<html lang="en">
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+.navbar ul{
+    display: flex;
+    width: 100%;
+    background-color: black;
+}
+hr{
+        height: 1px;
+        background-color: gray;
+        border: none;
+        width: 100%;
+}
+.navbar ul li{
+    margin: 30px;
+    padding-right: 10px;
+    color: #ccc;
+    font-size: larger;
+    font-weight: bold;
+    font-family: 'Cuprum', sans-serif;
+    /* background-color: black; */
+}
+.navbar ul li:hover{
+    /* border: 20px; */
+    /* background-color: green; */
+    /* border: 1px solid white; */
+    /* padding: 20px; */
+    /* margin: 20px; */
+    padding-right: 10px;
+    color: white;
+    /* font-size: x-large; */
+    /* background-color: black; */
+}
+.heading h1{
+    text-align: center;
+    align-items: center;
+    color: white;
+    background-color: black;
+    font-weight: bold;
+    padding: 20px;
+    font-size: 100px;
+    font-family: 'Anton', sans-serif;
+}
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="samstyle.css">
-    <title>BlogPage</title>
-</head>
+.content{
+    /* padding-top: 20px; */
+    display: grid;
+    /* background-color: aqua; */
+    /* grid-gap: 10px; */
+    /* width: 50%; */
+    grid-template-columns: auto auto;
+    color: white;
+}
+.content .item{
+    padding-top: 20px;
+    border: 2px solid black;
+    background-color: black;
+    /* margin: 20px; */
+    /* padding: ; */
+    display: flex;
+    justify-content: space-around;
+    /* border-bottom: 1px solid #ccc; */
+}
+.content .item img{
+    padding-right: 10px;
+}
+.content .item1{
+    padding-top: 20px;
+    padding-left: 20px;
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+    grid-area: 1/1/4/2;
+    
+}
+.vertical p,h5{
+    color: gray;
+    font-family: 'Rajdhani', sans-serif;
+}
+.vertical h4{
+    font-family: 'KoHo', sans-serif;
+}
+.content .item1 img{
+    width: 90%;
+    height: 60%;
+}
+.content .item img{
+    width: 30%;
+    height: 50%;
+}
+.card img{
+    height: 40%;
+    width: 50%;
+}
+.section{
+    width:100%;
+    height:700px;
+    background-size: cover;
 
-<body>
-    <div class="outer">
-        <div class="navbar">
+}
+.section h1{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding:25px 0;
+}
+.col{
+    width:67rem;
+    margin:auto;
+   /* border:1px solid red;*/
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.section-item{
+    flex-basis: 23%;
+    margin:10px 0;
+    padding:20px 0px;
+    text-align: center;
+    box-shadow: 0px 0px 10px 3px lightgray;
+}
+.section-item p{
+    padding: 10px;
+}
+.section-item button{
+    background-color: rgb(124, 20, 162);
+    padding:10px 25px;
+    color:aquamarine;
+    border: none;
+    border-radius: 13px;
+    margin:10px 0;
+}
+.section-item:hover{
+    background: rgb(124, 20, 162);
+}
+.section-item:hover h3,.section-item:hover p{
+    color:aquamarine;
+}
+.section-item:hover button{
+    background: aquamarine;
+    color:rgb(124, 20, 162);
 
-            <ul>
-                <li class="nav-img"><img src="C:\Users\compaq\Downloads\pngegg.png" alt=""></li>
-                <li class="nav">Learn</li>
-                <li class="nav">Blog</li>
-                <li class="nav">BookMarks</li>
-                <li class="nav">Contact</li>
-            </ul>
-        </div>
-        <hr>
-        <div class="heading">
-            <h1>The Blog</h1>
-        </div>
-        <hr>
-        
-        <div class="content">
-            <div class="item1">
-                <img src="images/1.jpg" alt="">
-                <div class="vertical">
-                    <h5> Nov 1, 2022</h5>
-                    <br>
-                    <h4>The Xero Degrees</h4>
-                    <br>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt numquam distinctio minus enim
-                        repellendus quaerat delectus architecto eos! Odit, eius?</p>
-                </div>
+}
 
-            </div>
-            <div class="item">
-                <img src="images/3.jpg" alt="">
-                <div class="vertical">
-                    <h5> Nov 1, 2022</h5>
-                    <br>
-                    <h4>The Xero Degrees</h4>
-                    <br>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt numquam distinctio minus enim
-                        repellendus quaerat delectus architecto eos! Odit, eius?</p>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <hr>
-                </div>
-
-            </div>
-            <div class="item">
-                <img src="images/5.jpg" alt="">
-                <div class="vertical">
-                    <h5> Nov 1, 2022</h5>
-                    <br>
-                    <h4>The Xero Degrees</h4>
-                    <br>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt numquam distinctio minus enim
-                        repellendus quaerat delectus architecto eos! Odit, eius?</p>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <hr>
-                </div>
-
-            </div>
-            <div class="item">
-                <img src="images/4.jpg" alt="">
-                <div class="vertical">
-                    <h5> Nov 1, 2022</h5>
-                    <br>
-                    <h4>The Xero Degrees</h4>
-                    <br>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt numquam distinctio minus enim
-                        repellendus quaerat delectus architecto eos! Odit, eius?</p>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <hr>
-                </div>
-            </div>
-        </div>
-        
-            
-        </div>
-         <div class="section">
-            <h1>FOOD & PLACES</h1>
-            <div class="col">
-                <div class="section-item">
-                    <img src="images/4.jpg" width="100px" height="100px">
-                    <h5>01 Nov 2022</h5></br>
-                    <h3>art1</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, maiores dolores cumque aliquam mollitia quis aperiam inventore animi magni! Nam libero eveniet iusto veniam illum.</p>
-                    <button>read more</button>
-                </div>
-                <div class="section-item">
-                    <img src="images/2.jpg" width="100px" height="100px">
-                    <h5>01 Nov 2022</h5></br>
-                    <h3>art2</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, maiores dolores cumque aliquam mollitia quis aperiam inventore animi magni! Nam libero eveniet iusto veniam illum.</p>
-                    <button>read more</button>
-                </div>
-                <div class="section-item">
-                    <img src="images/1.jpg" width="100px" height="100px">
-                    <h5>01 Nov 2022</h5></br>
-                    <h3>art3</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, maiores dolores cumque aliquam mollitia quis aperiam inventore animi magni! Nam libero eveniet iusto veniam illum.</p>
-                    <button>read more</button>
-                </div>
-                <div class="section-item">
-                    <img src="images/3.jpg" width="100px" height="100px">
-                    <h5>01 Nov 2022</h5></br>
-                    <h3>art4</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, maiores dolores cumque aliquam mollitia quis aperiam inventore animi magni! Nam libero eveniet iusto veniam illum.</p>
-                    <button>read more</button>
-                </div>
-            </div>
-         </div>
-    </div>
-</body>
-
-</html>
+footer{
+    background: grey;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+}
+.social-links{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.4rem;
+}
+.social-links a{
+    border: 2px solid white;
+    color: black;
+    display: block;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    text-decoration: none;
+    margin: 0 0.3rem;
+    transition: all 0.5s ease;
+}
+.social-links a:hover{
+    background: purple;
+    opacity:0.9;
+    color:var(--exDark);
+}
+.footer span{
+    margin-top: 1rem;
+    display: block;
+    font-family: var(--Playfair);
+    letter-spacing: 2px;
+}
+@media only screen and (min-width: 200px) and (max-width: 767px){
+    .col{
+        width: 100%;
+        flex-direction: column;
+    }
+}
