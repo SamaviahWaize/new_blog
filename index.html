@@ -1,190 +1,153 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    list-style-type: none;
-    text-decoration: none;
-}
-.navbar ul{
-    display: flex;
-    width: 100%;
-    background-color: black;
-}
-hr{
-        height: 1px;
-        background-color: gray;
-        border: none;
-        width: 100%;
-}
-.navbar ul li{
-    margin: 30px;
-    padding-right: 10px;
-    color: #ccc;
-    font-size: larger;
-    font-weight: bold;
-    font-family: 'Cuprum', sans-serif;
-    /* background-color: black; */
-}
-.navbar ul li:hover{
-    /* border: 20px; */
-    /* background-color: green; */
-    /* border: 1px solid white; */
-    /* padding: 20px; */
-    /* margin: 20px; */
-    padding-right: 10px;
-    color: white;
-    /* font-size: x-large; */
-    /* background-color: black; */
-}
-.heading h1{
-    text-align: center;
-    align-items: center;
-    color: white;
-    background-color: black;
-    font-weight: bold;
-    padding: 20px;
-    font-size: 100px;
-    font-family: 'Anton', sans-serif;
-}
+<!DOCTYPE html>
+<html lang="en">
 
-.content{
-    /* padding-top: 20px; */
-    display: grid;
-    /* background-color: aqua; */
-    /* grid-gap: 10px; */
-    /* width: 50%; */
-    grid-template-columns: auto auto;
-    color: white;
-}
-.content .item{
-    padding-top: 20px;
-    border: 2px solid black;
-    background-color: black;
-    /* margin: 20px; */
-    /* padding: ; */
-    display: flex;
-    justify-content: space-around;
-    /* border-bottom: 1px solid #ccc; */
-}
-.content .item img{
-    padding-right: 10px;
-}
-.content .item1{
-    padding-top: 20px;
-    padding-left: 20px;
-    border: 2px solid black;
-    background-color: black;
-    color: white;
-    grid-area: 1/1/4/2;
-    
-}
-.vertical p,h5{
-    color: gray;
-    font-family: 'Rajdhani', sans-serif;
-}
-.vertical h4{
-    font-family: 'KoHo', sans-serif;
-}
-.content .item1 img{
-    width: 90%;
-    height: 60%;
-}
-.content .item img{
-    width: 30%;
-    height: 50%;
-}
-.card img{
-    height: 40%;
-    width: 50%;
-}
-.section{
-    width:100%;
-    height:700px;
-    background-size: cover;
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="samstyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a169d1185d.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Cuprum&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=KoHo:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=KoHo:wght@200&family=Rajdhani&display=swap" rel="stylesheet">
 
-}
-.section h1{
-    text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding:25px 0;
-}
-.col{
-    width:67rem;
-    margin:auto;
-   /* border:1px solid red;*/
-    display:flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-.section-item{
-    flex-basis: 23%;
-    margin:10px 0;
-    padding:20px 0px;
-    text-align: center;
-    box-shadow: 0px 0px 10px 3px lightgray;
-}
-.section-item p{
-    padding: 10px;
-}
-.section-item button{
-    background-color: rgb(124, 20, 162);
-    padding:10px 25px;
-    color:aquamarine;
-    border: none;
-    border-radius: 13px;
-    margin:10px 0;
-}
-.section-item:hover{
-    background: rgb(124, 20, 162);
-}
-.section-item:hover h3,.section-item:hover p{
-    color:aquamarine;
-}
-.section-item:hover button{
-    background: aquamarine;
-    color:rgb(124, 20, 162);
+    <title>BlogPage</title>
+</head>
 
-}
+<body>
+    <div class="outer">
+        <div class="navbar">
 
-footer{
-    background: grey;
-    color: white;
-    text-align: center;
-    padding: 2rem 0;
-}
-.social-links{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 1.4rem;
-}
-.social-links a{
-    border: 2px solid white;
-    color: black;
-    display: block;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    text-decoration: none;
-    margin: 0 0.3rem;
-    transition: all 0.5s ease;
-}
-.social-links a:hover{
-    background: purple;
-    opacity:0.9;
-    color:var(--exDark);
-}
-.footer span{
-    margin-top: 1rem;
-    display: block;
-    font-family: var(--Playfair);
-    letter-spacing: 2px;
-}
-@media only screen and (min-width: 200px) and (max-width: 767px){
-    .col{
-        width: 100%;
-        flex-direction: column;
-    }
-}
+            <ul>
+                <li class="nav-img"><img src="C:\Users\compaq\Downloads\pngegg.png" alt=""></li>
+                <li class="nav">Learn</li>
+                <li class="nav">Blog</li>
+                <li class="nav">BookMarks</li>
+                <li class="nav">Contact</li>
+            </ul>
+        </div>
+        <hr>
+        <div class="heading">
+            <h1>THE BLOG</h1>
+        </div>
+        <hr>
+        
+        <div class="content">
+            <div class="item1">
+                <img src="images/1.jpg" alt="">
+                <div class="vertical">
+                    <h5> Nov 1, 2022</h5>
+                    <br>
+                    <h4>BIRYANI BY KILO</h4>
+                    <br>
+                    <p>Biryani by kilo offers traditional Hyderabadi and Lucknowi biryani cooked in individual handis delivered to your home.
+                        It has sent a benchmark among contemporaries because of its service,quality and taste.
+                        The menu is kept short and simple and even even vegetarians have few choices.They cook such phenomenal biryanis, very authentic, delivery is in a clay pot that just takes the taste a notch above. They have main course of Korma, kebabs and Nihari as well. The biryanis are of both kinds, pakki from Hyderabad and Lucknow and kacchi (raw) from Calcutta, just order any - all wonderful.
+
+                    
+                        </p>
+                </div>
+
+            </div>
+            <div class="item">
+                <img src="images/3.jpg" alt="">
+                <div class="vertical">
+                    <h5> Nov 1, 2022</h5>
+                    <br>
+                    <h4>AMA CAFE</h4>
+                    <br>
+                    <p>AMA Cafe, Majnu ka Tila, New Delhi is a fine cafe with beautiful interior and a warm ambience. It has one of the most soothing vicinities in majnu ka tila.Teas and coffee rule their beverage section. We would recommend one of their ice blended lattes to accompany your snack or sweet-dish.
+                         Alternatively, if you wish to ditch the sugar and go organic, they also offer fresh fruit juices.</p>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <hr>
+                </div>
+
+            </div>
+            <div class="item">
+                <img src="images/5.jpg" alt="">
+                <div class="vertical">
+                    <h5> Nov 1, 2022</h5>
+                    <br>
+                    <h4>XERO DEGREES</h4>
+                    <br>
+                    <p>Xero degrees is such a delight to visit , this place has cozy seating with great soothing Bollywood songs and the ambience is just wow.
+                        Xero Degrees is famous throughout Delhi for its delicious fast food presented in a very cool manner. Have nicely cooked pizza, chicken wings and peri peri chicken at this restaurant when you happen to be near it. Great coffee will make your meal tastier and you'll surely come back.</p>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <hr>
+                </div>
+
+            </div>
+            <div class="item">
+                <img src="images/4.jpg" alt="">
+                <div class="vertical">
+                    <h5> Nov 1, 2022</h5>
+                    <br>
+                    <h4>THE PIZZA EXPRESS</h4>
+                    <br>
+                    <p>The menu of this restaurant is recommended to Italian cuisine lovers. Trying perfectly cooked indian pizza, spaghetti and pizza salads is a pleasant experience here. 
+                        At this place guests can delve deep into delicious dishes, and degust good chocolate cheesecakes, banoffee pie and gelato.If you are a pizza lover like me you must visit this place. They serve a huge variety of Pizza with delicious taste and expert quality. Their food is finger licking. Signature pizzas are must try. Staff is very polite and professional. </p>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <hr>
+                </div>
+            </div>
+        </div>
+        
+            
+        </div>
+         <div class="section">
+            <h1>FOOD & PLACES</h1>
+            <div class="col">
+                <div class="section-item">
+                    <img src="images/4.jpg" width="100px" height="100px">
+                    <h5>01 Nov 2022</h5></br>
+                    <h3>art1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, maiores dolores cumque aliquam mollitia quis aperiam inventore animi magni! Nam libero eveniet iusto veniam illum.</p>
+                    <button>read more</button>
+                </div>
+                <div class="section-item">
+                    <img src="images/2.jpg" width="100px" height="100px">
+                    <h5>01 Nov 2022</h5></br>
+                    <h3>art2</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, maiores dolores cumque aliquam mollitia quis aperiam inventore animi magni! Nam libero eveniet iusto veniam illum.</p>
+                    <button>read more</button>
+                </div>
+                <div class="section-item">
+                    <img src="images/1.jpg" width="100px" height="100px">
+                    <h5>01 Nov 2022</h5></br>
+                    <h3>art3</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, maiores dolores cumque aliquam mollitia quis aperiam inventore animi magni! Nam libero eveniet iusto veniam illum.</p>
+                    <button>read more</button>
+                </div>
+                <div class="section-item">
+                    <img src="images/3.jpg" width="100px" height="100px">
+                    <h5>01 Nov 2022</h5></br>
+                    <h3>art4</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, maiores dolores cumque aliquam mollitia quis aperiam inventore animi magni! Nam libero eveniet iusto veniam illum.</p>
+                    <button>read more</button>
+                </div>
+            </div>
+         </div>
+    </div>
+
+    <footer>
+        <div class = "social-links">
+        <a href = "#"><i class = "fab fa-facebook"></i></a>
+        <a href = "#"><i class = "fab fa-twitter"></i></a>
+        <a href = "#"><i class = "fab fa-instagram"></i></a>
+        <a href = "#"><i class = "fab fa-pinterest"></i></a>
+        </div>
+        <span>Food & places blog page</span>
+    </footer>
+</body>
+
+</html>
