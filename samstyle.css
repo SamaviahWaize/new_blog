@@ -6,6 +6,25 @@
     list-style-type: none;
     text-decoration: none;
 }
+button{
+     align-items: center;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+
+}
+button{
+    padding: 20px;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+}
+button:hover{
+    color: purple;
+    background-color: aqua;
+}
 
 nav{
     display: flex;
@@ -108,9 +127,7 @@ hr{
         width: 100%;
 }
 
-.heading{
-    width: 100vw;
-}
+
 .heading h1{
     text-align: center;
     align-items: center;
@@ -119,14 +136,24 @@ hr{
     font-weight: bold;
     padding: 20px;
     font-size: 100px;
+    font-family: 'Fjalla One', sans-serif;
 }
-
+.vertical h4{
+    font-family: 'KoHo', sans-serif;
+}
+.vertical p{
+    font-family: 'Maven Pro', sans-serif;
+    color: gray;
+}
+.vertical h5{
+    color: gray;
+}
+.outer ul li a{
+    font-family: 'KoHo', sans-serif;
+    
+}
 .content{
-    /* padding-top: 20px; */
     display: grid;
-    /* background-color: aqua; */
-    /* grid-gap: 10px; */
-    /* width: 50%; */
     grid-template-columns: auto auto;
     color: white;
 }
@@ -134,11 +161,9 @@ hr{
     padding-top: 20px;
     border: 2px solid black;
     background-color: black;
-    /* margin: 20px; */
-    /* padding: ; */
+
     display: flex;
     justify-content: space-around;
-    /* border-bottom: 1px solid #ccc; */
 }
 .content .item img{
     padding-right: 10px;
@@ -153,7 +178,7 @@ hr{
     
 }
 .content .item1 img{
-    width: 40%;
+    width: 70%;
     height: 50%;
 }
 .content .item img{
@@ -165,8 +190,7 @@ hr{
     width: 50%;
 }
 .section{
-    width:100 vw;
-    height:700px;
+    width:100%;
     background-size: cover;
 
 }
@@ -176,13 +200,16 @@ hr{
     padding:25px 0;
 }
 .col{
-    width:1170px;
     margin:auto;
-   /* border:1px solid red;*/
     display:flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
+.section-item p{
+    font-family: 'Maven Pro', sans-serif;
+    color: black;
+}
+
 .section-item{
     flex-basis: 23%;
     margin:10px 0;
@@ -193,35 +220,135 @@ hr{
 .section-item p{
     padding: 10px;
 }
+.section-item h3{
+    font-family: 'Maven Pro', sans-serif;
+    color: #111;
+
+}
 .section-item button{
     background-color: rgb(124, 20, 162);
     padding:10px 25px;
-    color:aquamarine;
+    color:white;
     border: none;
     border-radius: 13px;
-    margin:10px 0;
+    margin: auto;
 }
 .section-item:hover{
     background: rgb(124, 20, 162);
 }
 .section-item:hover h3,.section-item:hover p{
-    color:aquamarine;
+    color:white;
 }
 .section-item:hover button{
-    background: aquamarine;
+    background: white;
     color:rgb(124, 20, 162);
 
 }
+
+footer{
+    background-color:black;
+    color:white;
+}
+footer p{
+    color:gray;
+}
+footer .container{
+    width:90%;
+    margin:0 auto;
+    display:flex;
+    padding:50px 0;
+}
+.about{
+    padding:0 15px;
+}
+.about, .contact{
+    width:40%;
+}
+.links{
+    width:20%;
+}
+.container h2{
+    margin-bottom: 20px;
+}
+.social{
+    margin-top: 30px;
+}
+.social ul{
+    display:flex;
+}
+.social ul li a{
+    display: inline-block;
+    margin-right: 50px;
+    width: 50px;
+    height: 50px;
+    padding-top: 15px;
+    background-color: transparent;
+    border: 1px solid gray;
+    text-align: center;
+    border-radius: 50%;
+}
+.social ul li a:hover{
+    color:black;
+    background-color: purple;
+}
+.links ul li a{
+    color:gray;
+}
+.links ul li{
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+.links ul li a:hover{
+    color:white;
+}
+.container h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.contact ul li{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.contact ul li span{
+    margin-right:15px;
+
+}
+.contact ul li a{
+    color:gray;
+}
+@media screen and(max-width:992px) {
+    .about,.contact{
+    width:35%;
+    }
+    .links{
+    width:30%;
+    }
+}
+@media  screen and (max-width:767px) {
+    .about,.contact,.links{
+    width:100%;
+    margin-bottom:30px;
+    } 
+    .container{
+        flex-direction: column;
+    } 
+}
+@media screen and (max-width:1080px){
+    
+        .social ul li a{
+           margin-right: 10px;
+        }
+       
+    
+}
+
 @media only screen and (max-width: 767px){
     .content{
-        /* padding-top: 20px; */
         display: grid;
-        /* background-color: aqua; */
-        /* grid-gap: 10px; */
-        /* width: 50%; */
         grid-template-columns: auto;
         color: white;
-        /* margin: 10px; */
+       
     }
     .col{
         width: 60%;
